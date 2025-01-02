@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028669845029",
+    "project_id": "mobil-cafe",
+    "storage_bucket": "mobil-cafe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028669845029:android:16a4c688ef6e5b3c0e59cc",
+        "android_client_info": {
+          "package_name": "com.example.mobil_cafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_4Noy7d18u_qPH4ygEJpS9vp0R_SYe40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
