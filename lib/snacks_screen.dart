@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'CartProvider.dart';
 
-class DessertsScreen extends StatelessWidget {
-  const DessertsScreen({super.key});
+class SnacksScreen extends StatelessWidget {
+  const SnacksScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tatlılar'),
+        title: const Text('Atıştırmalıklar'),
       ),
       body: Stack(
         children: [
@@ -28,7 +28,7 @@ class DessertsScreen extends StatelessWidget {
             child: ListView(
               children: [
                 const Text(
-                  'Tatlı Menüsü',
+                  'Atıştırmalık Menüsü',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -43,9 +43,9 @@ class DessertsScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                dessertCard(context, '1', 'Cheesecake', 'assets/images/special.jpg', 30),
-                dessertCard(context, '2', 'Tiramisu', 'assets/images/special2.jpg', 35),
-                dessertCard(context, '3', 'Çikolatalı Pasta', 'assets/images/special.jpg', 40),
+                snackCard(context, '1', 'Patates Kızartması', 'assets/images/special.jpg', 30),
+                snackCard(context, '2', 'Soğan Halkası', 'assets/images/special2.jpg', 35),
+                snackCard(context, '3', 'Mozzarella Sticks', 'assets/images/special.jpg', 40),
               ],
             ),
           ),
@@ -54,7 +54,7 @@ class DessertsScreen extends StatelessWidget {
     );
   }
 
-  Widget dessertCard(BuildContext context, String id, String name, String imagePath, double price) {
+  Widget snackCard(BuildContext context, String id, String name, String imagePath, double price) {
     return Card(
       color: Colors.white.withOpacity(0.8), // Kartın hafif şeffaf olması için
       margin: const EdgeInsets.symmetric(vertical: 10),

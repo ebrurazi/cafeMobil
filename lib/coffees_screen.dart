@@ -1,15 +1,15 @@
-import 'package:flutter/material.dart';
+    import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'CartProvider.dart';
 
-class DessertsScreen extends StatelessWidget {
-  const DessertsScreen({super.key});
+class CoffeesScreen extends StatelessWidget {
+  const CoffeesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tatlılar'),
+        title: const Text('Kahveler'),
       ),
       body: Stack(
         children: [
@@ -22,13 +22,13 @@ class DessertsScreen extends StatelessWidget {
               ),
             ),
           ),
-          // İçerik
+    // İçerik
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: ListView(
               children: [
                 const Text(
-                  'Tatlı Menüsü',
+                  'Kahve Menüsü',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -43,9 +43,9 @@ class DessertsScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                dessertCard(context, '1', 'Cheesecake', 'assets/images/special.jpg', 30),
-                dessertCard(context, '2', 'Tiramisu', 'assets/images/special2.jpg', 35),
-                dessertCard(context, '3', 'Çikolatalı Pasta', 'assets/images/special.jpg', 40),
+                coffeeCard(context, '1', 'Espresso', 'assets/images/special.jpg', 30),
+                coffeeCard(context, '2', 'Americano', 'assets/images/special2.jpg', 35),
+                coffeeCard(context, '3', 'Latte', 'assets/images/special.jpg', 40),
               ],
             ),
           ),
@@ -53,8 +53,7 @@ class DessertsScreen extends StatelessWidget {
       ),
     );
   }
-
-  Widget dessertCard(BuildContext context, String id, String name, String imagePath, double price) {
+  Widget coffeeCard(BuildContext context, String id, String name, String imagePath, double price) {
     return Card(
       color: Colors.white.withOpacity(0.8), // Kartın hafif şeffaf olması için
       margin: const EdgeInsets.symmetric(vertical: 10),
