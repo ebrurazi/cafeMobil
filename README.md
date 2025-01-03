@@ -92,11 +92,4 @@ Kafe Uygulaması
 - `cloud_firestore`
 - `firebase_core`
 
-## Katkıda Bulunma
 
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin. Her türlü katkı memnuniyetle karşılanır!
-
-
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
