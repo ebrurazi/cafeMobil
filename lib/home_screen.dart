@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mobil_cafe/CartProvider.dart';
 import 'package:mobil_cafe/CartScreen.dart';
 import 'package:provider/provider.dart';
-import 'package:cloud_firestore/cloud_firestore.dart'; // Firestore için import
 
 import 'campaign_screen.dart'; // Kampanya detay ekranı için import
 import 'desserts_screen.dart'; // Tatlılar ekranı için import
@@ -36,7 +35,6 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _filteredProducts = _allProducts;
-    _addAllProductsToFirestore(); // Ürünleri Firestore'a eklemek için fonksiyonu çağırıyoruz
   }
 
   void _filterProducts(String query) {
@@ -57,12 +55,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text('Ürün ID: $id')),
     );
-  }
-
-  Future<void> _addAllProductsToFirestore() async {
-    for (var product in _allProducts) {
-      await FirebaseFirestore.instance.collection('products').add(product);
-    }
   }
 
   @override
