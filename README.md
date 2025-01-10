@@ -3,7 +3,10 @@
 Kafe Uygulaması
 
 ### Pull Request Çalışmaları
--## Mobil videomuz Drive Linki : https://drive.google.com/drive/folders/1tQ2miTKJDAK94sMBK-VgsVYYETKbplPe?usp=sharing
+
+- Mobil videomuz Drive Linki : https://drive.google.com/drive/folders/1tQ2miTKJDAK94sMBK-VgsVYYETKbplPe?usp=sharing
+
+- 
 - **[PR 1: UI Pages – Giriş ve Kayıt Ekranları Tasarlandı]**
   - Giriş ve kayıt işlemleri için modern ve kullanıcı dostu arayüz tasarlandı.
   - Form validasyonları eklendi.
